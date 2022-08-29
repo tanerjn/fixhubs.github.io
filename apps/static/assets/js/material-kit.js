@@ -7,7 +7,7 @@
 * Product Page: https://www.tanerjn.com/product/soft-ui-design-system
 * Copyright 2021 tanerjn (https://www.tanerjn.com)
 
-* Coded by tanerjn
+*   tanerjn
 
 =========================================================
 
