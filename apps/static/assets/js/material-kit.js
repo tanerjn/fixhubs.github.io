@@ -1,17 +1,9 @@
 /*!
 
 =========================================================
-* FixHub - v3.0.0
+* FixHub - v0.1.0
 =========================================================
-
-* Product Page: https://www.tanerjn.com/product/soft-ui-design-system
-* Copyright 2021 tanerjn (https://www.tanerjn.com)
-
-*   tanerjn
-
 =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
 
