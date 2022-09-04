@@ -7,9 +7,6 @@
 
 */
 
-
-
-
 let scores = [
     {name: "Player 1", score: 300},
     {name: "Player 2", score: 370},
@@ -40,7 +37,6 @@ function updateLeaderboardView() {
         leaderboard.appendChild(scoreRow);
 
         elements.push(scoreRow);
-
     }
 
     let colors = ["gold", "silver", "#cd7f32"];
