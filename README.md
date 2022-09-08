@@ -117,7 +117,7 @@ $ pip3 install -r requirements.txt
 > Set Up Flask Environment
 
 ```bash
-$ export FLASK_APP=run.py
+$ export FLASK_APP=app.py
 $ export FLASK_ENV=development
 ```
 
@@ -149,11 +149,11 @@ $ pip3 install -r requirements.txt
 
 ```bash
 $ # CMD 
-$ set FLASK_APP=run.py
+$ set FLASK_APP=app.py
 $ set FLASK_ENV=development
 $
 $ # Powershell
-$ $env:FLASK_APP = ".\run.py"
+$ $env:FLASK_APP = ".\app.py"
 $ $env:FLASK_ENV = "development"
 ```
 
@@ -227,7 +227,7 @@ The project is coded using blueprints, app factory pattern, dual configuration p
    |-- requirements.txt                     # App Dependencies
    |
    |-- .env                                 # Inject Configuration via Environment
-   |-- run.py                               # Start the app - WSGI gateway
+   |-- app.py                               # Start the app - WSGI gateway
    |
    |-- ************************************************************************
 ```
