@@ -29,15 +29,15 @@ class ProductionConfig(Config):
     REMEMBER_COOKIE_HTTPONLY = True
     REMEMBER_COOKIE_DURATION = 3600
 
-    # PostgreSQL database
-    SQLALCHEMY_DATABASE_URI = '{}://{}:{}@{}:{}/{}'.format(
-        os.getenv('DB_ENGINE'   , 'mysql'),
-        os.getenv('DB_USERNAME' , 'fixhub'),
-        os.getenv('DB_PASS'     , 'pass'),
-        os.getenv('DB_HOST'     , 'localhost'),
-        os.getenv('DB_PORT'     , 3306),
-        os.getenv('DB_NAME'     , 'fixhub_db')
-    ) 
+    # # PostgreSQL database
+    # SQLALCHEMY_DATABASE_URI = '{}://{}:{}@{}:{}/{}'.format(
+    #     os.getenv('DB_ENGINE'   , 'mysql'),
+    #     os.getenv('DB_USERNAME' , 'fixhub'),
+    #     os.getenv('DB_PASS'     , 'pass'),
+    #     os.getenv('DB_HOST'     , 'localhost'),
+    #     os.getenv('DB_PORT'     , 3306),
+    #     os.getenv('DB_NAME'     , 'fixhub_db')
+    # ) 
 
 class DebugConfig(Config):
     DEBUG = True
