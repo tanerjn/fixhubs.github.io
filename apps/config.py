@@ -14,7 +14,8 @@ class Config(object):
     SECRET_KEY = os.getenv('SECRET_KEY', 'S3cr3t')
 
     # This will create a file in <app> FOLDER
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
+    # SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'db.sqlite3')
+    SQLALCHEMY_DATABASE_URI = 'postgres://ungbomjbflqjpy:468a9dd86ba9a3fd9e7e0821599fc5bbeba6d45e35db75a21121eeddf97fd005@ec2-44-195-100-240.compute-1.amazonaws.com:5432/ddbfli0ijii842'
     SQLALCHEMY_TRACK_MODIFICATIONS = False 
 
     # Assets Management
