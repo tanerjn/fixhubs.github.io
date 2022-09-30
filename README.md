@@ -136,6 +136,7 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 
 <br />
 
-  - ✅ `Priority` on support
+  
+<img width="1008" alt="Screenshot 2022-09-30 at 18 06 35" src="https://user-images.githubusercontent.com/25350481/193311677-a3cbf69d-e053-4240-8ba9-6a35dae2b30b.png">
 
 
