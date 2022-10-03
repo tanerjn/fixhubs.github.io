@@ -4,6 +4,10 @@
 
 <img width="1280" alt="Screenshot 2022-09-30 at 17 58 02" src="https://user-images.githubusercontent.com/25350481/193310069-402be6e6-3e33-4b3b-87b3-893ed0cdf04a.png">
 
+Image: docker pull tanermetin/fixhubs.de
+Flask: flask run -p 3000
+Docker: docker run -d -p 5000:5000 tanermetin/fixhubs.de
+
 Make sure to connect to the right DB. If you don't have one, create as below.
 
 
