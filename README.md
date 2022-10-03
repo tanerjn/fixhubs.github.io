@@ -1,3 +1,12 @@
+[![Deploy static content to Pages](https://github.com/tanerjn/fixhubs.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/tanerjn/fixhubs.github.io/actions/workflows/pages.yml)
+
+#FIXHUB installation guide
+
+<img width="1280" alt="Screenshot 2022-09-30 at 17 58 02" src="https://user-images.githubusercontent.com/25350481/193310069-402be6e6-3e33-4b3b-87b3-893ed0cdf04a.png">
+
+Make sure to connect to the right DB. If you don't have one, create as below.
+
+
 ## ✨ Set up the MySql Database
 
 **Note:** Make sure your Mysql server is properly installed and accessible. 
@@ -127,6 +136,7 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 
 <br />
 
-  - ✅ `Priority` on support
+  
+<img width="1008" alt="Screenshot 2022-09-30 at 18 06 35" src="https://user-images.githubusercontent.com/25350481/193311677-a3cbf69d-e053-4240-8ba9-6a35dae2b30b.png">
 
 
