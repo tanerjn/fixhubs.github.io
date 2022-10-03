@@ -1,0 +1,29 @@
+# Simple workflowdfor deploying static content to GitHub Pages
+name: Push Docker
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+
+env:
+  DOCKER_REPO: ${{secrets.DOCKER_REPO}}
+  DOCKER_USER: ${{secrets.DOCKER_USERNAME}}
+  DOCKER_PASS: ${{secrets.DOCKER_PASSWORD}}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Login to DockerHub Registry
+        run: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USER --password-stdin
+      - name: Get Date #get the date of the build
+        id: date
+        run: echo "::set-output name=date::$(date+'%Y-%m-%d--%M-%S')"
+
+      - name: Image Build 
+        run: docker build . --file Dockerfile --tag $DOCKER_USER/$DOCKER_REPO
+        
+      - name: Docker Push
+        run: docker push $DOCKER_USER/$DOCKER_REPO
