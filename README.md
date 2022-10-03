@@ -1,4 +1,5 @@
 [![Deploy static content to Pages](https://github.com/tanerjn/fixhubs.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/tanerjn/fixhubs.github.io/actions/workflows/pages.yml)
+[![Push Docker](https://github.com/tanerjn/fixhubs.github.io/actions/workflows/docker.yml/badge.svg)](https://github.com/tanerjn/fixhubs.github.io/actions/workflows/docker.yml)
 
 #FIXHUB installation guide
 
