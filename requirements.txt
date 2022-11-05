@@ -22,7 +22,7 @@ cffi==1.13.1
 chardet==3.0.4
 chevron==0.14.0
 cleo==0.8.1
-Click==7.0
+Click==7.1
 clikit==0.6.2
 cookiecutter==1.7.3
 crashtest==0.3.1
