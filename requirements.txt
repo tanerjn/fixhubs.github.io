@@ -166,3 +166,4 @@ wrapt==1.12.1
 WTForms==3.0.0
 xxhash==3.0.0
 zipp==0.6.0
+#install poetry for dpendency resolution
