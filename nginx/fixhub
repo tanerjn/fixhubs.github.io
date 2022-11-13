@@ -1,0 +1,9 @@
+server { 
+	listen 80;
+	server_name fixhubs.de www.fixhubs.de;
+
+	location / {
+        include proxy_params;
+        proxy_pass http://unix:/opt/fixhubs.github.io/fixhub.sock;
+    }
+}
