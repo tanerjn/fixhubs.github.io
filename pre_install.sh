@@ -24,6 +24,7 @@ pip3 install flask-migrate
 pip3 install flask_minify
 pip3 install flask_login
 pip3 install flask_wtf
+pip install email-validator
 
 pip3 install -r requirements.txt
 
