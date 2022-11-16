@@ -1,13 +1,15 @@
- sudo mkdir /etc/nginx/sites-enabled
-  275  sudo ln -s /etc/nginx/sites-available/fixhub /etc/nginx/sites-enabled/
-  276  sudo nginx -t
-  277  sudo systemctl restart nginx
-  278  sudo ufw delete allow 5000
-  279  sudo ufw allow 'Nginx Full'
-  280  ufw app list
-  281  man ufw
-  282  ufw allow 80,443/tcp
-  283  vi /etc/ufw/applications.d/nginx.ini
-  284  ufw app update nginx
-  285  ufw app info 'Nginx HTTP'
-  286  ufw allow 'Nginx HTTP'
+sudo mkdir /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/fixhub /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx
+sudo ufw delete allow 5000
+sudo ufw allow 'Nginx Full'
+ufw app list
+man ufw
+ufw allow 80,443/tcp
+vi /etc/ufw/applications.d/nginx.ini
+ufw app update nginx
+ufw app info 'Nginx HTTP'
+ufw allow 'Nginx HTTP'
+sudo resolvectl flush-caches
+sudo journalctl -r -u systemd-resolved
