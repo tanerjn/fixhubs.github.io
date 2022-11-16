@@ -9,6 +9,7 @@ sudo apt install mariadb-server
 sudo mysql_secure_installation
 apt install libmysqlclient-dev
 apt install python3-flask
+sudo apt-get install python-pygments
 
 /etc/needrestart/restart.d/dbus.service
 systemctl restart systemd-logind.service
@@ -19,6 +20,7 @@ apt install tree
 apt install silversearcher-ag
 apt install libmariadb-dev
 apt install python3-pip python-dev
+apt-get install python3-pygments 
 
 pip3 install uwsgi flask
 pip3 install flask-migrate
@@ -31,6 +33,7 @@ pip3 install -r requirements.txt
 sudo mkdir /var/www/example
 touch /var/www/example.app.py
 
+echo "alias ccat='pygmentize -g -O full,style=friendly,linenos=1'" >> ~/.bashrc
 echo "from flask import Flask
 app = Flask(__name__)
 

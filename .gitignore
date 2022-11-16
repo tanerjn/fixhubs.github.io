@@ -26,7 +26,7 @@ _templates
 # javascript
 package-lock.json
 .vscode/symbols.json
-
+log.json
 apps/static/assets/node_modules
 apps/static/assets/yarn.lock
 apps/static/assets/.temp

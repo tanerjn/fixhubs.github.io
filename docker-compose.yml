@@ -1,7 +1,7 @@
 version: '3.8'
 services:
-  tanerjn-app:
-    container_name: tanerjn_app
+  fixhub-app:
+    container_name: fixhub_app
     restart: always
     env_file: .env
     build: .
@@ -19,7 +19,7 @@ services:
     networks:
       - web_network
     depends_on: 
-      - tanerjn-app
+      - fixhub-app
 networks:
   db_network:
     driver: bridge
