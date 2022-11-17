@@ -2,10 +2,12 @@
 
 echo 'alias flask_app="export FLASK_APP=app.py"' >> ~/.bashrc	
 echo 'alias flask_env="export FLASK_ENV=debug"' >> ~/.bashrc
+echo 'alias flask_run="flask run --host=0.0.0.0"' >> ~/.bashrc
 
 pip3 install -r requirements.txt
 apt install libmysqlclient-dev
 apt install python3-flask
+python3 -m pip install --user virtualenv
 apt install nginx
 apt install tree
 apt install silversearcher-ag
@@ -14,6 +16,8 @@ apt install python3-pip python-dev
 pip3 install uwsgi flask
 pip3 install flask-migrate
 pip3 install flask_minify
+pip3 install mysqlclient
+pip3 install mysql-python
 pip3 install flask_login
 pip3 install flask_wtf
 pip install email-validator
