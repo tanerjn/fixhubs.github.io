@@ -5,6 +5,7 @@ __pycache__/
 # nginx
 nginx/fullchain.pem
 nginx/privkey.pem
+nohup.out 
 
 # tests and coverage
 *.pytest_cache
