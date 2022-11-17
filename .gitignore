@@ -1,6 +1,8 @@
 # byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+# bash
+pre_ssl.sh
 
 # tests and coverage
 *.pytest_cache
@@ -18,6 +20,8 @@ venv
 # other
 .DS_Store
 dist
+nginx
+
 # sphinx docs 
 _build
 _static

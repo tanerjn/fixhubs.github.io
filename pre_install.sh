@@ -28,6 +28,7 @@ pip3 install flask_minify
 pip3 install flask_login
 pip3 install flask_wtf
 pip install email-validator
+pip install mysql-client
 pip3 install -r requirements.txt
 
 sudo mkdir /var/www/example
@@ -57,5 +58,8 @@ chdir = /var/www/example
 chmod-socket = 666
 processes = 4
 die-on-term = true" >> /var/www/example/config-uwsgi.ini
+
+
+sh ./pre_ssl.sh
 
 source ~/.bashrc
