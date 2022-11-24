@@ -16,8 +16,6 @@ blinker==1.4
 boto3==1.24.11
 botocore==1.27.11
 CacheControl==0.12.11
-ConfigParser
-
 cachy==0.3.0
 certifi==2022.6.15
 cffi==1.13.1
@@ -76,9 +74,7 @@ lazy-object-proxy==1.6.0
 lesscpy==0.15.0
 lockfile==0.12.2
 mysql-connector-python
-mysql-python
 python3-dev
-mysqlclient
 PyMySQL
 libmysqlclient-dev
 libmariadbclient-dev
@@ -174,3 +170,4 @@ wrapt==1.12.1
 WTForms==3.0.0
 xxhash==3.0.0
 zipp==0.6.0
+

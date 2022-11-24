@@ -35,6 +35,8 @@ sudo cp nginx/app.py /var/www/example
 sudo cp nginx/config-nginx.conf /var/www/example/
 sudo cp nginx/default.conf /etc/nginx/conf.d/ 
 
+python3 -m pip install python-dev-tools --user --upgrade
+
 #certbot --nginx --redirect -d fixhubs.de 
 
 
