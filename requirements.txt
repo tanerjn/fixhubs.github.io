@@ -74,7 +74,7 @@ lazy-object-proxy==1.6.0
 lesscpy==0.15.0
 lockfile==0.12.2
 mysql-connector-python
-python3-dev
+python-dev
 PyMySQL
 libmysqlclient-dev
 libmariadbclient-dev
