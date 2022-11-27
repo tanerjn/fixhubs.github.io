@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM python:3.8-slim-buster 
+FROM python:3.11.0a1-slim 
 
 WORKDIR /fixhubs
 
@@ -9,7 +9,10 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-EXPOSE 3000
+
+ENV PATH="{$PATH}:/usr/pgsql-9.3/bin/"
+
+EXPOSE 5000
 
 CMD [ "python3", "-m", "flask", "run", "--host=0.0.0.0"]
 
