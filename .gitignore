@@ -17,6 +17,7 @@ nohup.out
 *.db
 *.sqlite3
 *.log
+database.ini
 
 # venv
 env
@@ -39,6 +40,10 @@ apps/static/assets/node_modules
 apps/static/assets/yarn.lock
 apps/static/assets/.temp
 
+# keys
 fixhubs.de_key.zip
+
+# swap 
+*.swp
 
 
