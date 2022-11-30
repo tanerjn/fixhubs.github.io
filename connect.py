@@ -32,7 +32,7 @@ def connect():
         #cur.execute(drop_products)
 
         #createdb("gslsk")
-        dropdb("gslsk")
+        #dropdb("gslsk")
 
         # close the communication with the PostgreSQL
         cur.close()
