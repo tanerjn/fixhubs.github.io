@@ -11,9 +11,8 @@ from sys import exit
 from dotenv import load_dotenv
 from apps.config import config_dict
 from apps import create_app, db
+import psycopg2
 
-
-load_dotenv()
 
 # WARNING: Don't run with debug turned on in production!
 DEBUG = (os.getenv('DEBUG', 'False') == 'True')
@@ -31,14 +30,20 @@ except KeyError:
 app = create_app(app_config)
 Migrate(app, db)
 
+url = os.getenv('PS URL')
+connection = psycopg2.connect(url)
+
+
+
 if not DEBUG:
     Minify(app=app, html=True, js=False, cssless=False)
     
 if DEBUG:
     app.logger.info('DEBUG            = ' + str(DEBUG)             )
     app.logger.info('FLASK_ENV        = ' + os.getenv('FLASK_ENV') )
-    app.logger.info('Page Compression = ' + 'FALSE' if DEBUG else 'TRUE' )
-    app.logger.info('DBMS             = ' + app_config.SQLALCHEMY_DATABASE_URI)
+    app.logger.info('POSTGRES         = ' + os.getenv('PS_URL') )
+    app.logger.info('PAGE COMPRESSION = ' + 'FALSE' if DEBUG else 'TRUE' )
+    app.logger.info('SQLALCHEMY       = ' + app_config.SQLALCHEMY_DATABASE_URI)
     app.logger.info('ASSETS_ROOT      = ' + app_config.ASSETS_ROOT )
 
 if __name__ == "__main__":
