@@ -4,11 +4,6 @@
 
 <img width="1280" alt="Screenshot 2022-09-30 at 17 58 02" src="https://user-images.githubusercontent.com/25350481/193310069-402be6e6-3e33-4b3b-87b3-893ed0cdf04a.png">
 
-Image: docker pull tanermetin/fixhubs.de
-<br />
-Flask: flask run -p 3000
-<br />
-Docker: docker run -d -p 5000:5000 tanermetin/fixhubs.de
 
 
 ```
