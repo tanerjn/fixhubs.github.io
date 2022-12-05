@@ -1,10 +1,9 @@
-#!/usr/bin/python3
+#:/usr/bin/python3
 
 import psycopg2
 from config import config
 from createdb import createdb
 from dropdb import dropdb
-
 
 #def add_table(table_name, first_element, second_element, primary_key ):
 #    add_string="CREATE TABLE " + table_name "(" + primary_key + "serial PRIMARY KEY, "+ first_element + " VARCHAR(50) UNIQUE NOT NULL, " + second_element + " VARCHAR ( 50 ) NOT NULL, created_on TIMESTAMP NOT NULL, last_login TIMESTAMP);"
@@ -26,17 +25,17 @@ def connect():
         conn = psycopg2.connect(host="localhost", port = 5432, database="suppliers", user="postgres")
         conn.autocommit=True
         cur = conn.cursor() 
-    
+            
         #cur.execute(table_developers)
         #cur.execute(table_languages)
         #cur.execute(drop_products)
 
-        #createdb("gslsk")
+        createdb("business")
         #dropdb("gslsk")
 
         # close the communication with the PostgreSQL
         cur.close()
-
+    
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     finally:
